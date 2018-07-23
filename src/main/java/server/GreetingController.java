@@ -112,7 +112,8 @@ public class GreetingController {
     }
 
 
-    @PutMapping(value = "/person/{id}")
+//    @PutMapping(value = "/person/{id}")
+    @RequestMapping(value = "/person/{id}", method = RequestMethod.PUT)
     public String updateStudent(@PathVariable("id") final int id, @Valid @RequestBody String json){
         try {
             ObjectMapper objectMapper = new ObjectMapper();
@@ -125,10 +126,20 @@ public class GreetingController {
             personEntity.setPlaceofbirth(person.getPlaceofbirth());
             personEntity.setName(person.getName());
             personRepo.save(personEntity);
-            return "success!!";
+            return "Success!!";
             //return new ResponseEntity<PersonEntity>(HttpStatus.NOT_FOUND);
         } catch (Exception e){
             //return new ResponseEntity<PersonEntity>(HttpStatus.OK);
+            return "Error!!";
+        }
+    }
+
+    @RequestMapping(value = "/person/{id}", method = RequestMethod.DELETE)
+    public String deletePerson(@PathVariable("id") int id){
+        try{
+            personRepo.deleteById(id);
+            return "Success!!";
+        }catch (Exception e){
             return "Error!!";
         }
     }

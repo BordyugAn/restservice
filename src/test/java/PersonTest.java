@@ -2,12 +2,9 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.kevinsawicki.http.HttpRequest;
 import org.junit.Test;
-import org.springframework.web.multipart.MultipartFile;
 import server.form.Person;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.Date;
 
 public class PersonTest {
 
@@ -56,4 +53,13 @@ public class PersonTest {
         System.out.println(request.code());
         System.out.println(request.body());
     }
+
+
+    @Test
+    public void deletePersonTest(){
+        HttpRequest request = HttpRequest.delete("http://localhost:8080/person/2");
+        request.send("");
+        System.out.println(request.code());
+    }
+
 }
