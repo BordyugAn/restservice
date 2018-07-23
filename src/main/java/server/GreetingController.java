@@ -1,14 +1,8 @@
 package server;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import server.domain.JSONEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import server.domain.PersonEntity;
@@ -17,10 +11,6 @@ import server.repos.JSONRepo;
 import server.repos.PersonRepo;
 
 import javax.validation.Valid;
-import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -32,7 +22,7 @@ import java.util.concurrent.atomic.AtomicLong;
 public class GreetingController {
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
-    private static final Logger logger = LoggerFactory.getLogger(GreetingController.class);
+    private static final Logger log = Logger.getLogger(GreetingController.class);
 
     @Autowired
     private JSONRepo jsonRepo;
@@ -60,7 +50,7 @@ public class GreetingController {
            jsonRepo.save(new JSONEntity(content));
            return greeting;
         }catch (Exception e){
-            logger.info(e.getMessage());
+            //logger.info(e.getMessage());
             return null;
         }
     }
@@ -71,7 +61,7 @@ public class GreetingController {
             String content = jsonRepo.findAllById(id).getContent();
             return content;
         }catch (Exception e){
-            logger.info(e.getMessage());
+            log.info(e.getMessage());
             return "Error!!!";
         }
     }
@@ -86,35 +76,55 @@ public class GreetingController {
             personRepo.save(new PersonEntity(person.getName(), date, person.getPlaceofbirth(), person.getLocation()));
             return json;
         } catch (Exception e){
+            log.info(e.getMessage());
             return "Error!!!";
         }
     }
 
     @RequestMapping("/person/table")
     public List<PersonEntity> viewPersonTable(){
-        return (List<PersonEntity>) personRepo.findAll();
+        try {
+            return (List<PersonEntity>) personRepo.findAll();
+        } catch (Exception e){
+            log.info(e.getMessage());
+            return null;
+        }
     }
 
 
     @RequestMapping("/person/bylocation")
     public List<PersonEntity> viewPersonByLocation(@RequestParam(value="location", required=false) String location){
-        return (List<PersonEntity>) personRepo.findAllByLocation(location);
+        try {
+            return (List<PersonEntity>) personRepo.findAllByLocation(location);
+        }catch (Exception e){
+            log.info(e.getMessage());
+            return null;
+        }
     }
 
     @RequestMapping("/person/byplace")
     public List<PersonEntity> viewPersonByPlace(@RequestParam(value="place", required=false) String place){
-        return (List<PersonEntity>) personRepo.findAllByPlaceofbirth(place);
+        try {
+            return (List<PersonEntity>) personRepo.findAllByPlaceofbirth(place);
+        } catch (Exception e){
+            log.info(e.getMessage());
+            return null;
+        }
     }
 
     @RequestMapping("/person/byname")
     public List<PersonEntity> viewPersonByName(@RequestParam(value="name", required=false) String name){
-        return (List<PersonEntity>) personRepo.findAllByName(name);
+        try {
+            return (List<PersonEntity>) personRepo.findAllByName(name);
+        } catch (Exception e){
+            log.info(e.getMessage());
+            return null;
+        }
     }
 
 
-//    @PutMapping(value = "/person/{id}")
     @RequestMapping(value = "/person/{id}", method = RequestMethod.PUT)
-    public String updateStudent(@PathVariable("id") final int id, @Valid @RequestBody String json){
+    public String updatePerson(@PathVariable("id") final int id, @Valid @RequestBody String json){
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             Person person = objectMapper.readValue(json, Person.class);
@@ -127,9 +137,8 @@ public class GreetingController {
             personEntity.setName(person.getName());
             personRepo.save(personEntity);
             return "Success!!";
-            //return new ResponseEntity<PersonEntity>(HttpStatus.NOT_FOUND);
         } catch (Exception e){
-            //return new ResponseEntity<PersonEntity>(HttpStatus.OK);
+            log.info(e.toString());
             return "Error!!";
         }
     }
@@ -140,7 +149,18 @@ public class GreetingController {
             personRepo.deleteById(id);
             return "Success!!";
         }catch (Exception e){
+            log.info(e.getMessage());
             return "Error!!";
+        }
+    }
+
+    @RequestMapping(value = "/person/{id}", method = RequestMethod.GET)
+    public PersonEntity getById(@PathVariable("id") int id){
+        try{
+            return personRepo.findById(id);
+        } catch (Exception e){
+            log.info(e.toString());
+            return null;
         }
     }
 }

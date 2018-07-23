@@ -45,7 +45,7 @@ public class PersonTest {
 
     @Test
     public void updatePersonTest() throws JsonProcessingException {
-        HttpRequest request = HttpRequest.put("http://localhost:8080/person/1");
+        HttpRequest request = HttpRequest.put("http://localhost:8080/person/10");
         Person person = new Person("Bordyug Anatoly", "July 3, 1995", "Ivanovo","Saint-Petersburg");
         ObjectMapper objectMapper = new ObjectMapper();
         String json = objectMapper.writeValueAsString(person);
@@ -57,8 +57,9 @@ public class PersonTest {
 
     @Test
     public void deletePersonTest(){
-        HttpRequest request = HttpRequest.delete("http://localhost:8080/person/2");
+        HttpRequest request = HttpRequest.delete("http://localhost:8080/person/6");
         request.send("");
+        System.out.println(request.body());
         System.out.println(request.code());
     }
 
