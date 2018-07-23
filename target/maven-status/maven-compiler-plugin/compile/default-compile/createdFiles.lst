@@ -1,0 +1,9 @@
+server\repos\JSONRepo.class
+server\Application.class
+server\GreetingController.class
+server\domain\PersonEntity.class
+server\Greeting.class
+server\repos\PersonRepo.class
+server\form\Person.class
+server\domain\JSONEntity.class
+server\form\JSON.class
