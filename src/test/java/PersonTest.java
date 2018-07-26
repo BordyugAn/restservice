@@ -57,7 +57,7 @@ public class PersonTest {
 
     @Test
     public void deletePersonTest(){
-        HttpRequest request = HttpRequest.delete("http://localhost:8080/person/6");
+        HttpRequest request = HttpRequest.delete("http://localhost:8080/person/3");
         request.send("");
         System.out.println(request.body());
         System.out.println(request.code());
