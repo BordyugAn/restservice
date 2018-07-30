@@ -13,51 +13,5 @@
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
-    <table id="5" parent="4" name="JSON"/>
-    <table id="6" parent="4" name="PERSON"/>
-    <column id="7" parent="5" name="ID">
-      <Position>1</Position>
-      <DataType>INTEGER(10)|4s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <DefaultExpression>(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_6DF6989F_DFD1_4605_B9F9_F22FF058B629)</DefaultExpression>
-    </column>
-    <column id="8" parent="5" name="CONTENT">
-      <Position>2</Position>
-      <DataType>VARCHAR(255)|12s</DataType>
-    </column>
-    <index id="9" parent="5" name="PRIMARY_KEY_2">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>ID</ColNames>
-      <Unique>1</Unique>
-    </index>
-    <key id="10" parent="5" name="CONSTRAINT_2">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>ID</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="11" parent="6" name="ID">
-      <Position>1</Position>
-      <DataType>BIGINT(19)|-5s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <DefaultExpression>(NEXT VALUE FOR PUBLIC.SYSTEM_SEQUENCE_23F786E1_CBEE_4AAF_AD49_2E134E4161A5)</DefaultExpression>
-    </column>
-    <column id="12" parent="6" name="NAME">
-      <Position>2</Position>
-      <DataType>VARCHAR|12s</DataType>
-    </column>
-    <column id="13" parent="6" name="DATEOFBIRTH">
-      <Position>3</Position>
-      <DataType>DATE(8)|91s</DataType>
-    </column>
-    <column id="14" parent="6" name="PLACEOFBIRTH">
-      <Position>4</Position>
-      <DataType>VARCHAR|12s</DataType>
-    </column>
-    <column id="15" parent="6" name="LOCATION">
-      <Position>5</Position>
-      <DataType>VARCHAR|12s</DataType>
-    </column>
   </database-model>
 </dataSource>

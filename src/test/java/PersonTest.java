@@ -10,7 +10,7 @@ public class PersonTest {
 
     @Test
     public void addPersonTest() throws IOException {
-        HttpRequest request = HttpRequest.post("http://localhost:8080/person");
+        HttpRequest request = HttpRequest.post("http://localhost:8080/person").useProxy("localhost", 3000);
         Person person = new Person("Bordyug Anatoly", "July 3, 1995", "Ivanovo","Moscow");
         ObjectMapper objectMapper = new ObjectMapper();
         String json = objectMapper.writeValueAsString(person);
@@ -23,7 +23,7 @@ public class PersonTest {
         do{
 
         }while (request.code()!=200);
-        request = HttpRequest.post("http://localhost:8080/person");
+        request = HttpRequest.post("http://localhost:8080/person").useProxy("localhost", 3000);
         json = objectMapper.writeValueAsString(person);
         request.send("arg="+json);
         //-------------------------------------------------------------
@@ -34,7 +34,7 @@ public class PersonTest {
         do{
 
         }while (request.code()!=200);
-        request = HttpRequest.post("http://localhost:8080/person");
+        request = HttpRequest.post("http://localhost:8080/person").useProxy("localhost", 3000);
         json = objectMapper.writeValueAsString(person);
         request.send("arg="+json);
         //-------------------------------------------------------------
@@ -45,7 +45,7 @@ public class PersonTest {
 
     @Test
     public void updatePersonTest() throws JsonProcessingException {
-        HttpRequest request = HttpRequest.put("http://localhost:8080/person/10");
+        HttpRequest request = HttpRequest.put("http://localhost:8080/person/1").useProxy("localhost", 3000);
         Person person = new Person("Bordyug Anatoly", "July 3, 1995", "Ivanovo","Saint-Petersburg");
         ObjectMapper objectMapper = new ObjectMapper();
         String json = objectMapper.writeValueAsString(person);
@@ -57,7 +57,7 @@ public class PersonTest {
 
     @Test
     public void deletePersonTest(){
-        HttpRequest request = HttpRequest.delete("http://localhost:8080/person/3");
+        HttpRequest request = HttpRequest.delete("http://localhost:8080/person/3").useProxy("localhost", 3000);
         request.send("");
         System.out.println(request.body());
         System.out.println(request.code());
