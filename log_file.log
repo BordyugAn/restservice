@@ -3,3 +3,15 @@
 2018-07-30 17:01:19 INFO  GreetingController:79 - could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
 2018-07-30 17:01:19 INFO  GreetingController:79 - could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
 2018-07-30 17:01:19 INFO  GreetingController:79 - could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2018-07-30 18:34:46 INFO  GreetingController:79 - No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+2018-07-30 18:36:48 INFO  GreetingController:79 - No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+2018-07-30 18:43:59 INFO  GreetingController:83 - No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+2018-07-30 18:45:55 INFO  GreetingController:83 - No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+2018-07-30 18:46:06 INFO  GreetingController:83 - No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]
+2018-07-30 18:46:14 INFO  GreetingController:83 - No content to map due to end-of-input
+ at [Source: (String)""; line: 1, column: 0]

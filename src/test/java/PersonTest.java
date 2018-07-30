@@ -3,8 +3,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.kevinsawicki.http.HttpRequest;
 import org.junit.Test;
 import server.form.Person;
-
 import java.io.IOException;
+
+import static org.junit.Assert.assertTrue;
 
 public class PersonTest {
 
@@ -61,6 +62,15 @@ public class PersonTest {
         request.send("");
         System.out.println(request.body());
         System.out.println(request.code());
+    }
+
+    @Test
+    public void invalidAddPerson(){
+        HttpRequest request = HttpRequest.post("http://localhost:8080/person").useProxy("localhost", 3000);
+        String json = "";
+        request.send("arg="+json);
+        System.out.println(request.code());
+        assertTrue(request.code()==406);
     }
 
 }

@@ -7,15 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16e82a65-e907-4746-9237-d9885cbd0486" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3036937-ed95-45b3-9d88-d4d4f510228c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3036937-ed95-45b3-9d88-d4d4f510228c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log_file.log" beforeDir="false" afterPath="$PROJECT_DIR$/log_file.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/GreetingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PersonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/gs-rest-service-0.1.0.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,7 +55,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="PERSON" value="1" />
-          <entry key="java" value="4" />
+          <entry key="java" value="6" />
           <entry key="log" value="2" />
           <entry key="properties" value="3" />
           <entry key="xml" value="1" />
@@ -70,7 +64,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="1" />
-          <entry key="JAVA" value="4" />
+          <entry key="JAVA" value="6" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="3" />
           <entry key="XML" value="1" />
@@ -78,14 +72,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="35" />
+          <entry key="java" value="154" />
           <entry key="properties" value="58" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="35" />
+          <entry key="JAVA" value="154" />
           <entry key="Properties" value="58" />
           <entry key="XML" value="2" />
         </counts>
@@ -112,14 +106,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PersonTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/server/GreetingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="256">
+              <caret line="83" column="63" selection-start-line="83" selection-start-column="63" selection-end-line="83" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PersonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/server/domain/JSONEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -136,15 +151,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/domain/PersonEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-216">
+            <state relative-caret-position="216">
               <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log_file.log">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -188,11 +198,11 @@
         <option value="$PROJECT_DIR$/src/main/java/server/form/Person.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddJSONTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/repos/PersonRepo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/server/GreetingController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/PersonTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/server/GreetingController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PersonTest.java" />
       </list>
     </option>
   </component>
@@ -336,7 +346,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532959592105" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1532965572595" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="H2" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -367,18 +377,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PersonTest.deletePersonTest">
+  <component name="RunManager" selected="JUnit.PersonTest.invalidAddPerson">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gs-rest-service" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PersonTest" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -402,6 +403,17 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PersonTest" />
       <option name="METHOD_NAME" value="deletePersonTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.invalidAddPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gs-rest-service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PersonTest" />
+      <option name="METHOD_NAME" value="invalidAddPerson" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -453,16 +465,16 @@
       <item itemvalue="JUnit.PersonTest.addPersonTest" />
       <item itemvalue="JUnit.PersonTest.updatePersonTest" />
       <item itemvalue="Spring Boot.Application (1)" />
-      <item itemvalue="JUnit.PersonTest" />
       <item itemvalue="JUnit.PersonTest.deletePersonTest" />
+      <item itemvalue="JUnit.PersonTest.invalidAddPerson" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PersonTest.invalidAddPerson" />
+        <item itemvalue="Spring Boot.Application (1)" />
+        <item itemvalue="JUnit.PersonTest.addPersonTest" />
         <item itemvalue="JUnit.PersonTest.deletePersonTest" />
         <item itemvalue="JUnit.PersonTest.updatePersonTest" />
-        <item itemvalue="JUnit.PersonTest.addPersonTest" />
-        <item itemvalue="Spring Boot.Application (1)" />
-        <item itemvalue="JUnit.PersonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -497,32 +509,11 @@
       <workItem from="1532606860649" duration="1483000" />
       <workItem from="1532608390627" duration="5623000" />
       <workItem from="1532620540263" duration="299000" />
-      <workItem from="1532939243193" duration="4045000" />
+      <workItem from="1532939243193" duration="7346000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PersonTest_addPersonTest - 2018.07.30 at 16h 40m 22s.xml">
-      <configuration name="PersonTest.addPersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest_addPersonTest - 2018.07.30 at 16h 47m 33s.xml">
-      <configuration name="PersonTest.addPersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest_addPersonTest - 2018.07.30 at 16h 49m 40s.xml">
-      <configuration name="PersonTest.addPersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest_addPersonTest - 2018.07.30 at 16h 49m 58s.xml">
-      <configuration name="PersonTest.addPersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest_updatePersonTest - 2018.07.30 at 16h 53m 34s.xml">
-      <configuration name="PersonTest.updatePersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest_updatePersonTest - 2018.07.30 at 16h 53m 45s.xml">
-      <configuration name="PersonTest.updatePersonTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PersonTest_deletePersonTest - 2018.07.30 at 16h 54m 42s.xml">
-      <configuration name="PersonTest.deletePersonTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PersonTest_addPersonTest - 2018.07.30 at 16h 56m 31s.xml">
       <configuration name="PersonTest.addPersonTest" configurationId="JUnit" />
     </history-entry>
@@ -532,9 +523,30 @@
     <history-entry file="PersonTest_addPersonTest - 2018.07.30 at 17h 04m 23s.xml">
       <configuration name="PersonTest.addPersonTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PersonTest_updatePersonTest - 2018.07.30 at 17h 05m 45s.xml">
+      <configuration name="PersonTest.updatePersonTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonTest_deletePersonTest - 2018.07.30 at 17h 06m 15s.xml">
+      <configuration name="PersonTest.deletePersonTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonTest_addPersonTest - 2018.07.30 at 18h 22m 36s.xml">
+      <configuration name="PersonTest.addPersonTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonTest_invalidAddPerson - 2018.07.30 at 18h 34m 47s.xml">
+      <configuration name="PersonTest.invalidAddPerson" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonTest_invalidAddPerson - 2018.07.30 at 18h 36m 49s.xml">
+      <configuration name="PersonTest.invalidAddPerson" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonTest_invalidAddPerson - 2018.07.30 at 18h 43m 59s.xml">
+      <configuration name="PersonTest.invalidAddPerson" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PersonTest_invalidAddPerson - 2018.07.30 at 18h 45m 56s.xml">
+      <configuration name="PersonTest.invalidAddPerson" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91580000" />
+    <option name="totallyTimeSpent" value="94881000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1920" height="983" extended-state="6" />
@@ -653,13 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/domain/JSONEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/car.json" />
     <entry file="file://$PROJECT_DIR$/target/person.json" />
     <entry file="das://a3036937-ed95-45b3-9d88-d4d4f510228c/database/TEST/schema/PUBLIC/table/JSON">
@@ -681,16 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/GreetingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1692">
-          <caret line="112" column="5" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -732,23 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/form/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/domain/PersonEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log_file.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -756,10 +734,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/log_file.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/domain/JSONEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/domain/PersonEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/form/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/GreetingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="83" column="63" selection-start-line="83" selection-start-column="63" selection-end-line="83" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PersonTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="228">
+          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

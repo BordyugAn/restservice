@@ -2,6 +2,9 @@ package server;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.log4j.Logger;
+import org.springframework.http.HttpRequest;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import server.domain.JSONEntity;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,17 +70,18 @@ public class GreetingController {
     }
 
     @RequestMapping(value = "/person", method = RequestMethod.POST)
-    public String addPerson(@RequestParam("arg") String json)  {
+    @ResponseBody
+    public ResponseEntity addPerson(@RequestParam("arg") String json)  {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             Person person = objectMapper.readValue(json, Person.class);
             DateFormat format = new SimpleDateFormat("MMMM d, yyyy", Locale.ENGLISH);
             Date date = format.parse(person.getDateofbirth());
             personRepo.save(new PersonEntity(person.getName(), date, person.getPlaceofbirth(), person.getLocation()));
-            return json;
+            return new ResponseEntity(HttpStatus.OK);
         } catch (Exception e){
             log.info(e.getMessage());
-            return "Error!!!";
+            return new ResponseEntity(HttpStatus.NOT_ACCEPTABLE);
         }
     }
 
