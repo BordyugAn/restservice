@@ -2,6 +2,8 @@ package server;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.log4j.Logger;
+import org.apache.log4j.Priority;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.http.HttpRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -81,7 +83,7 @@ public class GreetingController {
             return new ResponseEntity(HttpStatus.OK);
         } catch (Exception e){
             log.info(e.getMessage());
-            return new ResponseEntity(HttpStatus.NOT_ACCEPTABLE);
+            return new ResponseEntity(HttpStatus.UNPROCESSABLE_ENTITY);
         }
     }
 
@@ -148,13 +150,16 @@ public class GreetingController {
     }
 
     @RequestMapping(value = "/person/{id}", method = RequestMethod.DELETE)
-    public String deletePerson(@PathVariable("id") int id){
+    public ResponseEntity deletePerson(@PathVariable("id") int id){
         try{
             personRepo.deleteById(id);
-            return "Success!!";
+            return new ResponseEntity(HttpStatus.OK);
+        }catch (IllegalArgumentException e){
+            log.info(e.getMessage());
+            return new ResponseEntity(HttpStatus.UNPROCESSABLE_ENTITY);
         }catch (Exception e){
             log.info(e.getMessage());
-            return "Error!!";
+            return new ResponseEntity(HttpStatus.I_AM_A_TEAPOT);
         }
     }
 
@@ -166,5 +171,10 @@ public class GreetingController {
             log.info(e.toString());
             return null;
         }
+    }
+
+    @RabbitListener(queues = "myFirstQueue")
+    public void processQueue1(String message) {
+        log.info("Received from myFirstQueue: " + message);
     }
 }
