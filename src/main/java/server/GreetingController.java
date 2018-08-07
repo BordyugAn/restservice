@@ -1,10 +1,11 @@
 package server;
 
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.log4j.Logger;
-import org.apache.log4j.Priority;
+import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
-import org.springframework.http.HttpRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +17,9 @@ import server.repos.JSONRepo;
 import server.repos.PersonRepo;
 
 import javax.validation.Valid;
+import java.io.UnsupportedEncodingException;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -174,7 +177,37 @@ public class GreetingController {
     }
 
     @RabbitListener(queues = "myFirstQueue")
-    public void processQueue1(String message) {
-        log.info("Received from myFirstQueue: " + message);
+    public byte[] processQueue1(byte[] body, Message messageProp) throws UnsupportedEncodingException {
+        String message = new String(body,"UTF-8");
+        log.info("Message from myFirstQueue: " + String.valueOf(message));
+        //log.info(messageProp.getMessageProperties().);
+        String reply = "Reply on "+message;
+        return reply.getBytes();
+    }
+
+    @RabbitListener(queues = "personQueue")
+    public byte[] requestQueueListener(byte[] body) throws UnsupportedEncodingException {
+        String message = new String(body,"UTF-8");
+        log.info("person json from personQueue");
+        log.info("try add person to database");
+        try{
+            ObjectMapper objectMapper = new ObjectMapper();
+            Person person = objectMapper.readValue(message, Person.class);
+            DateFormat format = new SimpleDateFormat("MMMM d, yyyy", Locale.ENGLISH);
+            Date date = format.parse(person.getDateofbirth());
+            personRepo.save(new PersonEntity(person.getName(), date, person.getPlaceofbirth(), person.getLocation()));
+            return "Success!".getBytes();
+        }catch(JsonMappingException e){
+            log.info("Can't create object");
+            log.error(e.getMessage());
+            return "Error!".getBytes();
+        } catch (JsonParseException | ParseException e){
+            log.info("Can't parse data to JSON");
+            log.error(e.getMessage());
+            return "Invalid string format!".getBytes();
+        } catch (Exception e){
+            log.error(e.getMessage());
+            return "Error!".getBytes();
+        }
     }
 }

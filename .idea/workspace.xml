@@ -7,15 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16e82a65-e907-4746-9237-d9885cbd0486" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/server/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RabbitMQTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log_file.log" beforeDir="false" afterPath="$PROJECT_DIR$/log_file.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/server/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/GreetingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PersonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/server/GreetingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/GreetingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/PersonTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-PersonTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/PersonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PersonTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gs-rest-service-0.1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/gs-rest-service-0.1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gs-rest-service-0.1.0.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/gs-rest-service-0.1.0.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/log_file.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/log_file.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,27 +48,31 @@
     <session id="1555010832">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="28" />
+          <entry key="project.open.time.1" value="12" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.66" value="1" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.88" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="PERSON" value="1" />
-          <entry key="java" value="8" />
+          <entry key="java" value="12" />
           <entry key="log" value="2" />
           <entry key="properties" value="3" />
           <entry key="xml" value="1" />
@@ -75,7 +81,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="1" />
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="12" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="3" />
           <entry key="XML" value="1" />
@@ -83,14 +89,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="564" />
+          <entry key="java" value="1840" />
           <entry key="properties" value="82" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="564" />
+          <entry key="JAVA" value="1840" />
           <entry key="Properties" value="82" />
           <entry key="XML" value="5" />
         </counts>
@@ -102,15 +108,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
@@ -132,31 +129,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/GreetingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="177" column="44" selection-start-line="177" selection-start-column="44" selection-end-line="177" selection-end-column="44" />
+            <state relative-caret-position="198">
+              <caret line="32" column="81" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6382#6383#0" expanded="true" />
-                <element signature="e#6446#6447#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/server/repos/PersonRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PersonTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RabbitMQTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+            <state relative-caret-position="283">
+              <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,10 +151,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/server/domain/JSONEntity.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PersonTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="1116">
+              <caret line="95" column="20" selection-start-line="95" selection-start-column="10" selection-end-line="95" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/server/client/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-761">
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -194,8 +195,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="90">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -235,8 +236,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/server/GreetingController.java" />
         <option value="$PROJECT_DIR$/src/test/java/PersonTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/server/GreetingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/server/client/Client.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RabbitMQTests.java" />
       </list>
     </option>
   </component>
@@ -284,7 +287,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -317,6 +319,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restservice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restservice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="restservice" type="b2602c69:ProjectViewProjectNode" />
@@ -369,6 +380,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
@@ -380,7 +392,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533115830648" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533645943472" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="H2" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -411,23 +423,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application (1)">
+  <component name="RunManager" selected="JUnit.RabbitMQTests.test1">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PersonTest.addPersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gs-rest-service" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PersonTest" />
-      <option name="METHOD_NAME" value="addPersonTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -454,11 +452,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest.invalidAddPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RabbitMQTests.createQueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gs-rest-service" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PersonTest" />
-      <option name="METHOD_NAME" value="invalidAddPerson" />
+      <option name="MAIN_CLASS_NAME" value="RabbitMQTests" />
+      <option name="METHOD_NAME" value="createQueue" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitMQTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gs-rest-service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RabbitMQTests" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -493,19 +502,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.PersonTest.addPersonTest" />
       <item itemvalue="Spring Boot.Application (1)" />
       <item itemvalue="JUnit.PersonTest.deletePersonTest" />
-      <item itemvalue="JUnit.PersonTest.invalidAddPerson" />
       <item itemvalue="JUnit.PersonTest.getByLocationTest" />
+      <item itemvalue="JUnit.RabbitMQTests.createQueue" />
+      <item itemvalue="JUnit.RabbitMQTests.test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RabbitMQTests.test1" />
         <item itemvalue="Spring Boot.Application (1)" />
+        <item itemvalue="JUnit.RabbitMQTests.createQueue" />
         <item itemvalue="JUnit.PersonTest.getByLocationTest" />
         <item itemvalue="JUnit.PersonTest.deletePersonTest" />
-        <item itemvalue="JUnit.PersonTest.invalidAddPerson" />
-        <item itemvalue="JUnit.PersonTest.addPersonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -546,48 +555,65 @@
       <workItem from="1533113617843" duration="1444000" />
       <workItem from="1533201123318" duration="172000" />
       <workItem from="1533285811739" duration="1359000" />
+      <workItem from="1533288134910" duration="887000" />
+      <workItem from="1533291434891" duration="55000" />
+      <workItem from="1533291571687" duration="81000" />
+      <workItem from="1533295670920" duration="130000" />
+      <workItem from="1533295937622" duration="163000" />
+      <workItem from="1533296199981" duration="224000" />
+      <workItem from="1533297674835" duration="124000" />
+      <workItem from="1533297911568" duration="142000" />
+      <workItem from="1533547651335" duration="757000" />
+      <workItem from="1533558469264" duration="147000" />
+      <workItem from="1533560722209" duration="167000" />
+      <workItem from="1533568010476" duration="1036000" />
+      <workItem from="1533569145825" duration="389000" />
+      <workItem from="1533569593811" duration="657000" />
+      <workItem from="1533630505544" duration="2129000" />
+      <workItem from="1533632698773" duration="8542000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PersonTest_getByLocationTest - 2018.07.31 at 17h 39m 38s.xml">
-      <configuration name="PersonTest.getByLocationTest" configurationId="JUnit" />
+    <history-entry file="RabbitMQTests_test1 - 2018.08.07 at 12h 24m 33s.xml">
+      <configuration name="RabbitMQTests.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonTest_getByLocationTest - 2018.07.31 at 18h 54m 07s.xml">
-      <configuration name="PersonTest.getByLocationTest" configurationId="JUnit" />
+    <history-entry file="RabbitMQTests_test1 - 2018.08.07 at 12h 30m 44s.xml">
+      <configuration name="RabbitMQTests.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonTest_getByLocationTest - 2018.07.31 at 18h 54m 47s.xml">
-      <configuration name="PersonTest.getByLocationTest" configurationId="JUnit" />
+    <history-entry file="RabbitMQTests_test1 - 2018.08.07 at 12h 40m 19s.xml">
+      <configuration name="RabbitMQTests.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonTest_getByLocationTest - 2018.07.31 at 18h 56m 26s.xml">
-      <configuration name="PersonTest.getByLocationTest" configurationId="JUnit" />
+    <history-entry file="RabbitMQTests_test1 - 2018.08.07 at 13h 21m 14s.xml">
+      <configuration name="RabbitMQTests.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonTest_getByLocationTest - 2018.07.31 at 18h 56m 44s.xml">
-      <configuration name="PersonTest.getByLocationTest" configurationId="JUnit" />
+    <history-entry file="RabbitMQTests_test1 - 2018.08.07 at 13h 21m 35s.xml">
+      <configuration name="RabbitMQTests.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonTest_getByLocationTest - 2018.07.31 at 18h 57m 12s.xml">
-      <configuration name="PersonTest.getByLocationTest" configurationId="JUnit" />
+    <history-entry file="RabbitMQTests_test1 - 2018.08.07 at 13h 24m 22s.xml">
+      <configuration name="RabbitMQTests.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonTest_getByLocationTest - 2018.07.31 at 18h 59m 07s.xml">
-      <configuration name="PersonTest.getByLocationTest" configurationId="JUnit" />
+    <history-entry file="RabbitMQTests_test1 - 2018.08.07 at 13h 26m 32s.xml">
+      <configuration name="RabbitMQTests.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonTest_getByLocationTest - 2018.07.31 at 19h 01m 33s.xml">
-      <configuration name="PersonTest.getByLocationTest" configurationId="JUnit" />
+    <history-entry file="RabbitMQTests_test1 - 2018.08.07 at 13h 28m 04s.xml">
+      <configuration name="RabbitMQTests.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonTest_getByLocationTest - 2018.07.31 at 19h 01m 50s.xml">
-      <configuration name="PersonTest.getByLocationTest" configurationId="JUnit" />
+    <history-entry file="RabbitMQTests_test1 - 2018.08.07 at 15h 10m 00s.xml">
+      <configuration name="RabbitMQTests.test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PersonTest_getByLocationTest - 2018.08.01 at 12h 11m 04s.xml">
-      <configuration name="PersonTest.getByLocationTest" configurationId="JUnit" />
+    <history-entry file="RabbitMQTests_test1 - 2018.08.07 at 15h 10m 57s.xml">
+      <configuration name="RabbitMQTests.test1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107313000" />
+    <option name="totallyTimeSpent" value="122943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1920" height="983" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19688842" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19957082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -597,7 +623,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.16977613" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49731758" weight="0.31009614" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49731758" visible="true" weight="0.2872596" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39925373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -615,7 +641,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24892704" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="4" visible="true" weight="0.10032189" />
+      <window_info anchor="right" id="Maven Projects" order="4" visible="true" weight="0.10032189" />
       <window_info anchor="right" id="Database" order="5" sideWeight="0.49813432" weight="0.112660944" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
@@ -756,29 +782,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="1530">
           <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/form/JSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/repos/PersonRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -789,10 +794,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/form/Person.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/repos/PersonRepo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        <state relative-caret-position="180">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -803,29 +815,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/form/JSON.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="90">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/GreetingController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/form/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="177" column="44" selection-start-line="177" selection-start-column="44" selection-end-line="177" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6382#6383#0" expanded="true" />
-            <element signature="e#6446#6447#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PersonTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+        <state relative-caret-position="1116">
+          <caret line="95" column="20" selection-start-line="95" selection-start-column="10" selection-end-line="95" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/GreetingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="32" column="81" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/client/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-761">
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RabbitMQTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

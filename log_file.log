@@ -17,3 +17,43 @@
  at [Source: (String)""; line: 1, column: 0]
 2018-07-31 16:43:59 INFO  GreetingController:83 - No content to map due to end-of-input
  at [Source: (String)""; line: 1, column: 0]
+2018-08-07 12:24:28 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 12:24:28 INFO  GreetingController:192 - try add person to database
+2018-08-07 12:30:39 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 12:30:39 INFO  GreetingController:192 - try add person to database
+2018-08-07 12:40:14 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 12:40:14 INFO  GreetingController:192 - try add person to database
+2018-08-07 13:21:00 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 13:21:00 INFO  GreetingController:192 - try add person to database
+2018-08-07 13:21:29 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 13:21:29 INFO  GreetingController:192 - try add person to database
+2018-08-07 13:24:11 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 13:24:11 INFO  GreetingController:192 - try add person to database
+2018-08-07 13:24:16 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 13:24:16 INFO  GreetingController:192 - try add person to database
+2018-08-07 13:24:16 INFO  GreetingController:205 - Can't parse data to JSON
+2018-08-07 13:24:16 ERROR GreetingController:206 - Unrecognized token 'Wrong': was expecting ('true', 'false' or 'null')
+ at [Source: (String)"Wrong data"; line: 1, column: 6]
+2018-08-07 13:26:22 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 13:26:22 INFO  GreetingController:192 - try add person to database
+2018-08-07 13:26:27 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 13:26:27 INFO  GreetingController:192 - try add person to database
+2018-08-07 13:26:27 INFO  GreetingController:205 - Can't parse data to JSON
+2018-08-07 13:26:27 ERROR GreetingController:206 - Unrecognized token 'Wrong': was expecting ('true', 'false' or 'null')
+ at [Source: (String)"Wrong data"; line: 1, column: 6]
+2018-08-07 13:27:54 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 13:27:54 INFO  GreetingController:192 - try add person to database
+2018-08-07 13:27:59 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 13:27:59 INFO  GreetingController:192 - try add person to database
+2018-08-07 13:27:59 INFO  GreetingController:205 - Can't parse data to JSON
+2018-08-07 13:27:59 ERROR GreetingController:206 - Unrecognized token 'Wrong': was expecting ('true', 'false' or 'null')
+ at [Source: (String)"Wrong data"; line: 1, column: 6]
+2018-08-07 15:09:54 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 15:09:54 INFO  GreetingController:192 - try add person to database
+2018-08-07 15:10:46 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 15:10:46 INFO  GreetingController:192 - try add person to database
+2018-08-07 15:10:51 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 15:10:51 INFO  GreetingController:192 - try add person to database
+2018-08-07 15:10:51 INFO  GreetingController:205 - Can't parse data to JSON
+2018-08-07 15:10:51 ERROR GreetingController:206 - Unrecognized token 'Wrong': was expecting ('true', 'false' or 'null')
+ at [Source: (String)"Wrong data"; line: 1, column: 6]
