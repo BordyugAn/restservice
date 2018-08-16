@@ -1,3 +1,4 @@
-AddJSONTest.class
 PersonTest.class
 RabbitMQTests.class
+AddJSONTest.class
+ActiveMQTests.class

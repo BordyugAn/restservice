@@ -47,8 +47,8 @@ public class PersonTest {
 //
 //    @Test
 //    public void updatePersonTest() throws JsonProcessingException {
-//        HttpRequest request = HttpRequest.put("http://localhost:8080/person/1").useProxy("localhost", 3000);
-//        Person person = new Person("Bordyug Anatoly", "July 3, 1995", "Ivanovo","Saint-Petersburg");
+//        HttpRequest request = HttpRequest.put("http://localhost:8080/person/4").useProxy("localhost", 3000);
+//        Person person = new Person("Bordyug Anatoly", "July 1, 1995", "Ivanovo","Saint-Petersburg");
 //        ObjectMapper objectMapper = new ObjectMapper();
 //        String json = objectMapper.writeValueAsString(person);
 //        request.send(json);
@@ -77,11 +77,11 @@ public class PersonTest {
 //    @Test
 //    public void getByLocationTest(){
 //        HttpRequest request = HttpRequest.get("http://localhost:8080/person/bylocation").useProxy("localhost", 3000);
-//        request.send("location=Barcelona");
+//        request.send("location=Saint-Petersburg");
 //        do{
 //
 //        }while (request.code()!=200);
-//        System.out.println("Find by location = Barcelona");
+//        System.out.println("Find by location = Saint-Petersburg");
 //        String answer = request.body();
 //        System.out.println(answer);
 //        assertTrue(!answer.contains("[]"));
@@ -95,7 +95,6 @@ public class PersonTest {
 //        System.out.println(answer);
 //        assertTrue(answer.contains("[]"));
 //        Date date = new Date();
-//        date.setDate(4);
 //        System.out.println(date);
 //    }
 

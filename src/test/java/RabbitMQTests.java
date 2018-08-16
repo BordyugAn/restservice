@@ -1,8 +1,7 @@
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.log4j.Logger;
 import org.junit.Test;
-import server.client.Client;
+import server.client.RabbitMQClient;
 import server.form.Person;
 
 import java.io.IOException;
@@ -18,8 +17,8 @@ public class RabbitMQTests {
 
     @Test
     public void test1() throws IOException, TimeoutException, InterruptedException {
-        Client client = new Client("personQueue");
-        Person person = new Person("Testoviy chuvak", "July 18, 2000", "TestPlaceOfBirth", "TestCity");
+        RabbitMQClient client = new RabbitMQClient("personQueue");
+        Person person = new Person("Testoviy chuvak13", "July 18, 2000", "TestPlaceOfBirth", "TestCity");
         ObjectMapper objectMapper = new ObjectMapper();
         String message = objectMapper.writeValueAsString(person);
         String answer = "";

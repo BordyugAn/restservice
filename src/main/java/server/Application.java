@@ -2,11 +2,12 @@ package server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.jms.annotation.EnableJms;
 
 import java.io.IOException;
-import java.util.logging.LogManager;
 
 @SpringBootApplication
+@EnableJms
 public class Application {
     public static void main(String[] args) throws IOException {
         SpringApplication.run(Application.class, args);

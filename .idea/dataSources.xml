@@ -7,5 +7,11 @@
       <jdbc-driver>org.h2.Driver</jdbc-driver>
       <jdbc-url>jdbc:h2:file:~/test</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="restservicedb@localhost" uuid="7a2bdbd9-afe7-454e-923c-5f3356509a1d">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/restservicedb</jdbc-url>
+    </data-source>
   </component>
 </project>

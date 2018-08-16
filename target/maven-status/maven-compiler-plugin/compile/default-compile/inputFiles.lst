@@ -1,9 +1,14 @@
 /home/anatoly/Рабочий стол/training/restservice/src/main/java/server/form/Person.java
-/home/anatoly/Рабочий стол/training/restservice/src/main/java/server/domain/PersonEntity.java
+/home/anatoly/Рабочий стол/training/restservice/src/main/java/server/JmsConfig.java
 /home/anatoly/Рабочий стол/training/restservice/src/main/java/server/GreetingController.java
 /home/anatoly/Рабочий стол/training/restservice/src/main/java/server/form/JSON.java
-/home/anatoly/Рабочий стол/training/restservice/src/main/java/server/Application.java
-/home/anatoly/Рабочий стол/training/restservice/src/main/java/server/domain/JSONEntity.java
+/home/anatoly/Рабочий стол/training/restservice/src/main/java/server/ActiveWQListener.java
 /home/anatoly/Рабочий стол/training/restservice/src/main/java/server/repos/JSONRepo.java
 /home/anatoly/Рабочий стол/training/restservice/src/main/java/server/repos/PersonRepo.java
 /home/anatoly/Рабочий стол/training/restservice/src/main/java/server/Greeting.java
+/home/anatoly/Рабочий стол/training/restservice/src/main/java/server/client/ActiveMQClient.java
+/home/anatoly/Рабочий стол/training/restservice/src/main/java/server/Service/PersonDao.java
+/home/anatoly/Рабочий стол/training/restservice/src/main/java/server/client/RabbitMQClient.java
+/home/anatoly/Рабочий стол/training/restservice/src/main/java/server/domain/PersonEntity.java
+/home/anatoly/Рабочий стол/training/restservice/src/main/java/server/Application.java
+/home/anatoly/Рабочий стол/training/restservice/src/main/java/server/domain/JSONEntity.java

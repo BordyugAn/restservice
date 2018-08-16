@@ -57,3 +57,101 @@
 2018-08-07 15:10:51 INFO  GreetingController:205 - Can't parse data to JSON
 2018-08-07 15:10:51 ERROR GreetingController:206 - Unrecognized token 'Wrong': was expecting ('true', 'false' or 'null')
  at [Source: (String)"Wrong data"; line: 1, column: 6]
+2018-08-07 18:26:01 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 18:26:01 INFO  GreetingController:192 - try add person to database
+2018-08-07 18:26:06 INFO  GreetingController:191 - person json from personQueue
+2018-08-07 18:26:06 INFO  GreetingController:192 - try add person to database
+2018-08-07 18:26:06 INFO  GreetingController:205 - Can't parse data to JSON
+2018-08-07 18:26:06 ERROR GreetingController:206 - Unrecognized token 'Wrong': was expecting ('true', 'false' or 'null')
+ at [Source: (String)"Wrong data"; line: 1, column: 6]
+2018-08-13 10:24:58 ERROR PersonDao:44 - 
+2018-08-13 10:27:03 ERROR PersonDao:44 - 
+2018-08-13 10:31:05 ERROR PersonDao:44 - 
+2018-08-13 10:45:51 ERROR PersonDao:44 - 
+2018-08-13 10:47:19 ERROR PersonDao:44 - 
+2018-08-13 10:49:45 ERROR PersonDao:45 - 
+2018-08-13 10:52:39 ERROR PersonDao:48 - 
+2018-08-13 10:58:23 ERROR PersonDao:48 - 
+2018-08-13 11:00:22 ERROR PersonDao:48 - 
+2018-08-13 11:06:26 ERROR PersonDao:48 - 
+2018-08-13 11:08:00 ERROR PersonDao:49 - 
+2018-08-13 11:09:31 ERROR PersonDao:49 - 
+2018-08-13 11:10:20 ERROR PersonDao:50 - 
+2018-08-13 11:14:37 INFO  GreetingController:191 - person json from personQueue
+2018-08-13 11:14:37 INFO  GreetingController:192 - try add person to database
+2018-08-13 11:14:37 INFO  GreetingController:193 - Person: {"name":"Testoviy chuvak13","dateofbirth":"July 18, 2000","placeofbirth":"TestPlaceOfBirth","location":"TestCity"}
+2018-08-13 11:14:37 INFO  GreetingController:200 - Success add
+2018-08-13 11:18:42 INFO  PersonDao:37 - Success add
+2018-08-13 12:17:23 INFO  PersonDao:31 - Success add
+2018-08-13 12:17:23 INFO  PersonDao:31 - Success add
+2018-08-13 12:17:44 INFO  PersonDao:31 - Success add
+2018-08-13 12:24:44 INFO  PersonDao:31 - Success add
+2018-08-13 12:45:10 INFO  PersonDao:31 - Success add
+2018-08-13 12:49:10 INFO  PersonDao:31 - Success add
+2018-08-13 12:51:34 INFO  PersonDao:31 - Success add
+2018-08-13 14:05:20 INFO  PersonDao:31 - Success add
+2018-08-13 14:05:40 INFO  PersonDao:31 - Success add
+2018-08-13 14:27:25 INFO  PersonDao:31 - Success add
+2018-08-13 14:37:40 INFO  PersonDao:31 - Success add
+2018-08-13 15:27:42 INFO  GreetingController:191 - person json from personQueue
+2018-08-13 15:27:42 INFO  GreetingController:192 - try add person to database
+2018-08-13 15:27:42 INFO  GreetingController:193 - Person: {"name":"Testoviy chuvak13","dateofbirth":"July 18, 2000","placeofbirth":"TestPlaceOfBirth","location":"TestCity"}
+2018-08-13 15:27:42 INFO  PersonDao:31 - Success add
+2018-08-13 15:27:42 INFO  GreetingController:200 - Success add
+2018-08-13 15:29:51 INFO  PersonDao:31 - Success add
+2018-08-13 15:36:51 INFO  PersonDao:31 - Success add
+2018-08-13 15:58:41 INFO  PersonDao:31 - Success add
+2018-08-13 16:17:07 INFO  PersonDao:31 - Success add
+2018-08-13 16:18:58 INFO  PersonDao:31 - Success add
+2018-08-13 17:40:27 INFO  PersonDao:31 - Success add
+2018-08-13 17:41:45 INFO  PersonDao:31 - Success add
+2018-08-13 18:21:09 INFO  PersonDao:31 - Success add
+2018-08-13 18:22:04 INFO  PersonDao:31 - Success add
+2018-08-13 18:23:32 INFO  PersonDao:31 - Success add
+2018-08-14 14:17:17 INFO  PersonDao:31 - Success add
+2018-08-14 14:57:40 INFO  PersonDao:31 - Success add
+2018-08-14 15:12:28 INFO  PersonDao:31 - Success add
+2018-08-14 15:14:16 INFO  PersonDao:31 - Success add
+2018-08-14 15:54:00 INFO  PersonDao:31 - Success add
+2018-08-14 16:05:38 INFO  PersonDao:31 - Success add
+2018-08-14 16:37:32 INFO  PersonDao:31 - Success add
+2018-08-14 16:39:41 INFO  PersonDao:31 - Success add
+2018-08-14 16:43:36 INFO  PersonDao:31 - Success add
+2018-08-14 16:45:50 INFO  PersonDao:31 - Success add
+2018-08-14 16:45:50 INFO  ActiveMQClient:60 - bd61ef60-94c7-43ba-94a1-1a12be58c30f
+2018-08-14 16:45:50 INFO  ActiveMQClient:61 - {"name":"parapapa","dateofbirth":"July 18, 2000","placeofbirth":"TestPlaceOfBirth","location":"TestCity"}
+2018-08-14 17:07:10 INFO  PersonDao:31 - Success add
+2018-08-14 17:08:50 INFO  PersonDao:31 - Success add
+2018-08-14 17:08:50 INFO  ActiveMQClient:60 - 4ebf73fe-87a5-4352-8e72-a7d4dd879c12
+2018-08-14 17:08:50 INFO  ActiveMQClient:61 - {"name":"parapapa","dateofbirth":"July 18, 2000","placeofbirth":"TestPlaceOfBirth","location":"TestCity"}
+2018-08-14 17:10:12 INFO  PersonDao:31 - Success add
+2018-08-14 17:11:35 INFO  PersonDao:31 - Success add
+2018-08-14 17:11:35 INFO  ActiveMQClient:60 - e72e4db4-4eef-406e-8080-555ab6948a57
+2018-08-14 17:11:35 INFO  ActiveMQClient:61 - Success!
+2018-08-14 17:17:09 INFO  GreetingController:30 - e031ec86-7393-4067-9b32-39c838cbed68
+2018-08-14 17:17:09 INFO  GreetingController:31 - {"name":"parapapa","dateofbirth":"July 18, 2000","placeofbirth":"TestPlaceOfBirth","location":"TestCity"}
+2018-08-14 17:17:09 INFO  PersonDao:31 - Success add
+2018-08-14 17:17:09 INFO  GreetingController:36 - Success!
+2018-08-14 17:17:10 INFO  ActiveMQClient:55 - e031ec86-7393-4067-9b32-39c838cbed68
+2018-08-14 17:17:10 INFO  ActiveMQClient:56 - Success!
+2018-08-14 17:48:36 INFO  GreetingController:30 - b1f1dd4d-8bc1-4a1d-b4eb-5072685e7f99
+2018-08-14 17:48:36 INFO  GreetingController:31 - {"name":"parapapa","dateofbirth":"July 18, 2000","placeofbirth":"TestPlaceOfBirth","location":"TestCity"}
+2018-08-14 17:48:36 INFO  PersonDao:29 - Success add
+2018-08-14 17:48:36 INFO  GreetingController:36 - Success!
+2018-08-14 17:48:36 INFO  ActiveMQClient:55 - b1f1dd4d-8bc1-4a1d-b4eb-5072685e7f99
+2018-08-14 17:48:36 INFO  ActiveMQClient:56 - Success!
+2018-08-14 17:48:36 INFO  ActiveMQClient:57 - 1534258116248
+2018-08-15 11:42:55 INFO  GreetingController:30 - 3177307b-99d5-45b2-bd01-5c4c10e65564
+2018-08-15 11:42:55 INFO  GreetingController:31 - {"name":"parapapa","dateofbirth":"July 18, 2000","placeofbirth":"TestPlaceOfBirth","location":"TestCity"}
+2018-08-15 11:42:55 INFO  PersonDao:29 - Success add
+2018-08-15 11:42:55 INFO  GreetingController:36 - Success!
+2018-08-15 11:42:55 INFO  ActiveMQClient:58 - 3177307b-99d5-45b2-bd01-5c4c10e65564
+2018-08-15 11:42:55 INFO  ActiveMQClient:59 - Success!
+2018-08-15 11:42:55 INFO  ActiveMQClient:60 - 1534322575626
+2018-08-15 11:43:34 INFO  GreetingController:30 - 95de19c6-b2b9-4b97-89b3-cb1f21a6d91f
+2018-08-15 11:43:34 INFO  GreetingController:31 - {"name":"parapapa","dateofbirth":"July 18, 2000","placeofbirth":"TestPlaceOfBirth","location":"TestCity"}
+2018-08-15 11:43:34 INFO  PersonDao:29 - Success add
+2018-08-15 11:43:34 INFO  GreetingController:36 - Success!
+2018-08-15 11:43:34 INFO  ActiveMQClient:58 - 95de19c6-b2b9-4b97-89b3-cb1f21a6d91f
+2018-08-15 11:43:34 INFO  ActiveMQClient:59 - Success!
+2018-08-15 11:43:34 INFO  ActiveMQClient:60 - 1534322614194

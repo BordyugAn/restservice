@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: RabbitMQTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.546 s <<< FAILURE! - in RabbitMQTests
+test1(RabbitMQTests)  Time elapsed: 5.425 s  <<< ERROR!
+java.lang.NullPointerException
+	at RabbitMQTests.test1(RabbitMQTests.java:26)
+

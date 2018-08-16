@@ -1,9 +1,15 @@
+server/Service/PersonDao.class
+server/JmsConfig.class
+server/form/Person.class
+server/client/ActiveMQClient.class
+server/domain/PersonEntity.class
+server/client/RabbitMQClient$1.class
 server/GreetingController.class
 server/Application.class
 server/form/JSON.class
 server/Greeting.class
 server/repos/PersonRepo.class
-server/form/Person.class
+server/client/RabbitMQClient.class
 server/repos/JSONRepo.class
-server/domain/PersonEntity.class
+server/ActiveWQListener.class
 server/domain/JSONEntity.class

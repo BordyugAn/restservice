@@ -176,38 +176,40 @@ public class GreetingController {
         }
     }
 
-    @RabbitListener(queues = "myFirstQueue")
-    public byte[] processQueue1(byte[] body, Message messageProp) throws UnsupportedEncodingException {
-        String message = new String(body,"UTF-8");
-        log.info("Message from myFirstQueue: " + String.valueOf(message));
-        //log.info(messageProp.getMessageProperties().);
-        String reply = "Reply on "+message;
-        return reply.getBytes();
-    }
+//    @RabbitListener(queues = "myFirstQueue")
+//    public byte[] processQueue1(byte[] body, Message messageProp) throws UnsupportedEncodingException {
+//        String message = new String(body,"UTF-8");
+//        log.info("Message from myFirstQueue: " + String.valueOf(message));
+//        //log.info(messageProp.getMessageProperties().);
+//        String reply = "Reply on "+message;
+//        return reply.getBytes();
+//    }
 
     @RabbitListener(queues = "personQueue")
-    public byte[] requestQueueListener(byte[] body) throws UnsupportedEncodingException {
+    public void requestQueueListener(byte[] body) throws UnsupportedEncodingException {
         String message = new String(body,"UTF-8");
         log.info("person json from personQueue");
         log.info("try add person to database");
+        log.info("Person: " + message);
         try{
             ObjectMapper objectMapper = new ObjectMapper();
             Person person = objectMapper.readValue(message, Person.class);
             DateFormat format = new SimpleDateFormat("MMMM d, yyyy", Locale.ENGLISH);
             Date date = format.parse(person.getDateofbirth());
             personRepo.save(new PersonEntity(person.getName(), date, person.getPlaceofbirth(), person.getLocation()));
-            return "Success!".getBytes();
+            log.info("Success add");
+            //return "Success!".getBytes();
         }catch(JsonMappingException e){
             log.info("Can't create object");
             log.error(e.getMessage());
-            return "Error!".getBytes();
+            //return "Error!".getBytes();
         } catch (JsonParseException | ParseException e){
             log.info("Can't parse data to JSON");
             log.error(e.getMessage());
-            return "Invalid string format!".getBytes();
+            //return "Invalid string format!".getBytes();
         } catch (Exception e){
             log.error(e.getMessage());
-            return "Error!".getBytes();
+            //return "Error!".getBytes();
         }
     }
 }
